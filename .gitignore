@@ -1,0 +1,13 @@
+# Visual Studio local state
+.vs/
+*.user
+*.suo
+
+# Generated .NET build output
+**/bin/
+**/obj/
+
+# Local environment secrets
+.env
+.env.*
+!.env.example

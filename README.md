@@ -39,7 +39,22 @@ Each topic will include:
 
 ## Technology Stack
 
-Technologies will be added as they are introduced during the learning process.
+- C# and .NET 10
+- ASP.NET Core controller-based Web API
+- Built-in OpenAPI document generation
+- Visual Studio Community 2026
+- Git and GitHub
+
+## Current Implementation
+
+The application currently provides a weather sample API for learning routing,
+JSON responses, debugging, and dependency injection. No database, authentication,
+or order and inventory features have been implemented.
+
+The solution is located at `src/OrderInventory/OrderInventory.slnx`.
+Open it in Visual Studio and select the `https` launch profile to run the API.
+The current local endpoint is `https://localhost:7000/weatherforecast`.
+Local ports are defined in the API project's `Properties/launchSettings.json`.
 
 ## Development Methodology
 
@@ -48,3 +63,9 @@ Agile
 ## Documentation
 
 Project documentation is located in the `/docs` directory.
+
+- [Lesson 01: SDLC and Agile](docs/learning/01-sdlc-and-agile.md)
+- [Lesson 02: Environment and API Setup](docs/learning/02-environment-and-api-setup.md)
+- [Lesson 03: Routing, Debugging, and Dependency Injection](docs/learning/03-routing-debugging-and-di.md)
+- [Technical Glossary](docs/project/glossary.md)
+- [Progress Log](docs/progress/progress-log.md)

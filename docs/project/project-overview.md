@@ -35,4 +35,17 @@ Features will be introduced only when the required concepts have been studied an
 
 ## Current Status
 
-Planning and project setup.
+A .NET 10 controller-based API has been created and exercised locally.
+The weather sample uses a scoped service to classify temperatures.
+Business features, database access, and authentication have not started.
+
+## Engineering Standards
+
+- Keep HTTP handling and business rules separate when this improves clarity and testing.
+- Design database constraints and transactions to protect business correctness.
+- Design indexes around actual queries and verify their effect with execution plans.
+- Use bounded results, pagination, and asynchronous I/O where appropriate.
+- Measure latency percentiles, throughput, errors, and resource usage under defined workloads.
+- Introduce caching and distributed infrastructure when requirements and measurements justify them.
+- Treat high traffic capacity as a goal to validate, not a property guaranteed by a template.
+- Review changes before committing; push only when explicitly requested.
