@@ -39,7 +39,8 @@ A .NET 10 controller-based API has been created and exercised locally.
 The weather sample uses a scoped service to classify temperatures.
 An xUnit project verifies four boundary cases for the service. A deliberate boundary
 error was detected by a failing test, then corrected and verified.
-Business features, database access, and authentication have not started.
+Product Management has started with a request DTO and twelve validation test cases.
+Product endpoints, persistence, SKU uniqueness enforcement, and authentication are not implemented.
 
 ## Engineering Standards
 

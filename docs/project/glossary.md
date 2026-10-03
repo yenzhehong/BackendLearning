@@ -157,3 +157,31 @@ A regression is a change that breaks previously correct behavior.
 
 A build dependency between projects that lets one use accessible types from the other.
 The test project references the API project, not the reverse.
+
+## DTO and Request Contract
+
+Data Transfer Object: a type describing data crossing an application boundary.
+A request DTO exposes the fields a client is allowed to submit, separately from a persistence entity.
+
+## SKU
+
+Stock Keeping Unit: a business identifier for an inventory item, distinct from a database primary key.
+
+## Data Annotations
+
+Attributes such as Required, StringLength, and Range that declare validation rules.
+Creating an object does not automatically execute those rules.
+
+## Validation Context and Result
+
+ValidationContext describes the object being validated. ValidationResult reports
+an error and its associated member names. TryValidateObject performs explicit validation.
+
+## Decimal and Exclusive Bound
+
+Decimal is a base-10 numeric type useful for monetary values. An exclusive lower
+bound rejects equality with the minimum. Positive-value validation does not define currency or decimal places.
+
+## nameof
+
+A C# expression that produces a symbol's name as a string, avoiding handwritten property names in assertions.

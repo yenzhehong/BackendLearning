@@ -50,7 +50,8 @@ Each topic will include:
 
 The application currently provides a weather sample API for learning routing,
 JSON responses, debugging, and dependency injection. No database, authentication,
-or order and inventory features have been implemented.
+or order and inventory features have been implemented. A create-product request
+DTO and its validation tests are prepared; no product endpoint exists yet.
 
 The solution is located at `src/OrderInventory/OrderInventory.slnx`.
 Open it in Visual Studio and select the `https` launch profile to run the API.
@@ -62,6 +63,8 @@ Local ports are defined in the API project's `Properties/launchSettings.json`.
 `OrderInventory.Api.Tests` references the API project and tests the temperature
 classification service independently of HTTP and database access.
 Four cases cover both sides of the 10 C and 25 C boundaries.
+Twelve additional cases verify create-product DTO validation: a valid request,
+blank names and SKUs, string length boundaries, and non-positive and small positive prices.
 
 Run them through Visual Studio's Test Explorer or from the repository root:
 
@@ -83,5 +86,6 @@ Project documentation is located in the `/docs` directory.
 - [Lesson 02: Environment and API Setup](docs/learning/02-environment-and-api-setup.md)
 - [Lesson 03: Routing, Debugging, and Dependency Injection](docs/learning/03-routing-debugging-and-di.md)
 - [Lesson 04: Unit Testing and Boundary Regression](docs/learning/04-unit-testing-and-boundary-regression.md)
+- [Lesson 05: Product Request DTO and Validation](docs/learning/05-product-request-dto-and-validation.md)
 - [Technical Glossary](docs/project/glossary.md)
 - [Progress Log](docs/progress/progress-log.md)

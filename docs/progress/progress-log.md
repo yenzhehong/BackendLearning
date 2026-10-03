@@ -86,3 +86,32 @@ Unit testing fundamentals and boundary regression verification.
 ### Next Step
 
 Review the test project and documentation changes before committing.
+
+## 2026-10-04
+
+### Completed
+
+- Defined initial Create Product requirements and HTTP acceptance criteria.
+- Created CreateProductRequest under Contracts/Products with Name, Sku, and decimal Price.
+- Added Required, StringLength, and decimal Range validation attributes.
+- Used an exclusive zero minimum and invariant-culture range-limit parsing.
+- Wrote twelve DTO validation cases, including blank fields, length boundaries, and price checks.
+- Observed 16 passed, 0 failed, and 0 skipped in the learner's Test Explorer screenshot.
+- Independently reran dotnet test with --no-restore: 16 passed, 0 failed, and 0 skipped.
+- Saved Lesson 05, updated project records, and marked Product Management In Progress.
+
+### Current Project Stage
+
+Create-product contract and input validation preparation.
+
+### Verification Limits
+
+- The sixteen cases consist of twelve DTO tests and four weather service tests.
+- DTO tests call the validation API directly; they do not verify HTTP 400 responses.
+- SKU uniqueness, persistence, administrator access, concurrency, and load capacity remain unimplemented or unverified.
+- Currency, price precision and scale, and business maximum are undecided; 0.001 currently passes.
+- Null inputs and additional Unicode or serialization edge cases are not covered by these twelve DTO cases.
+
+### Next Step
+
+Review and commit the DTO, tests, and notes before continuing to a product endpoint.
