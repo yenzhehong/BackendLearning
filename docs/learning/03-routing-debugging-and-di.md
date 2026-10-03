@@ -105,7 +105,7 @@ objects that ASP.NET Core serializes into JSON. Debugging makes that flow observ
 - [x] Observed HTTP 200 and application/json.
 - [x] Registered, injected, and called a service.
 - [x] Observed correct summary classifications in sample responses.
-- [ ] Test 9, 10, 24, and 25 C with automated tests.
+- [x] Test 9, 10, 24, and 25 C with automated tests (completed in Lesson 04).
 - [ ] Explain DI and scoped lifetime without notes.
 
 ## References

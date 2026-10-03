@@ -56,3 +56,33 @@ Review the application and documentation changes before the next commit.
 - Boundary values 10 C and 25 C have not yet been verified by automated tests.
 - No load test has been performed; no throughput or latency target has been established.
 - Initial documentation was committed and pushed earlier; the new application and notes await review.
+
+## 2026-10-03
+
+### Completed
+
+- Created OrderInventory.Api.Tests targeting .NET 10 with xUnit.
+- Added a project reference to OrderInventory.Api.
+- Wrote a Fact test for 10 C returning Mild, then replaced it with a Theory.
+- Added InlineData cases for 9, 10, 24, and 25 C.
+- Viewed case parameters in Test Explorer and removed the duplicate Fact test.
+- Temporarily changed the rule from less than 10 to less than or equal to 10.
+- Observed 3 passed and 1 failed, with Expected: Mild and Actual: Cold for 10 C.
+- Restored the original rule and observed 4 passed, 0 failed, and 0 skipped.
+- Saved Lesson 04 and updated the glossary, README, project status, and Lesson 03 checklist.
+
+### Current Project Stage
+
+Unit testing fundamentals and boundary regression verification.
+
+### Verification Limits
+
+- Earlier application and documentation changes were committed as 6229edf and the learner reported a successful push.
+- Visual Studio test results were supplied through learner screenshots.
+- Independently reran dotnet test with --no-restore: 4 passed, 0 failed, 0 skipped.
+- These unit tests do not exercise HTTP routing, DI registration, database behavior, concurrency, or load capacity.
+- Test runner durations are not performance benchmarks.
+
+### Next Step
+
+Review the test project and documentation changes before committing.

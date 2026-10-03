@@ -37,6 +37,8 @@ Features will be introduced only when the required concepts have been studied an
 
 A .NET 10 controller-based API has been created and exercised locally.
 The weather sample uses a scoped service to classify temperatures.
+An xUnit project verifies four boundary cases for the service. A deliberate boundary
+error was detected by a failing test, then corrected and verified.
 Business features, database access, and authentication have not started.
 
 ## Engineering Standards

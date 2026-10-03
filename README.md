@@ -44,6 +44,7 @@ Each topic will include:
 - Built-in OpenAPI document generation
 - Visual Studio Community 2026
 - Git and GitHub
+- xUnit for unit testing
 
 ## Current Implementation
 
@@ -56,6 +57,20 @@ Open it in Visual Studio and select the `https` launch profile to run the API.
 The current local endpoint is `https://localhost:7000/weatherforecast`.
 Local ports are defined in the API project's `Properties/launchSettings.json`.
 
+## Tests
+
+`OrderInventory.Api.Tests` references the API project and tests the temperature
+classification service independently of HTTP and database access.
+Four cases cover both sides of the 10 C and 25 C boundaries.
+
+Run them through Visual Studio's Test Explorer or from the repository root:
+
+```powershell
+dotnet test src/OrderInventory/OrderInventory.Api.Tests/OrderInventory.Api.Tests.csproj
+```
+
+Passing these tests verifies the covered business rules, not API throughput or database correctness.
+
 ## Development Methodology
 
 Agile
@@ -67,5 +82,6 @@ Project documentation is located in the `/docs` directory.
 - [Lesson 01: SDLC and Agile](docs/learning/01-sdlc-and-agile.md)
 - [Lesson 02: Environment and API Setup](docs/learning/02-environment-and-api-setup.md)
 - [Lesson 03: Routing, Debugging, and Dependency Injection](docs/learning/03-routing-debugging-and-di.md)
+- [Lesson 04: Unit Testing and Boundary Regression](docs/learning/04-unit-testing-and-boundary-regression.md)
 - [Technical Glossary](docs/project/glossary.md)
 - [Progress Log](docs/progress/progress-log.md)

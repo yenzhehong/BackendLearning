@@ -132,3 +132,28 @@ An execution plan describes how a database executes a query. An index is a data 
 
 Throughput is completed work per unit of time. P95 and P99 latency describe the response-time thresholds covering 95% and 99% of measured requests.
 Capacity claims require a defined workload and measurements.
+
+## Unit Test
+
+An automated test of a small unit of behavior. These tests call the classification
+service directly without starting an HTTP server or using a database.
+
+## xUnit, Fact, and Theory
+
+xUnit is a .NET testing framework. Fact marks a test without supplied case data.
+Theory runs a test with supplied data; InlineData declares individual argument sets.
+
+## Arrange, Act, Assert
+
+AAA organizes a test into preparation, execution, and verification.
+An assertion compares observed behavior with the expected business rule.
+
+## Boundary Test and Regression
+
+A boundary test checks values at or near a rule's transition point.
+A regression is a change that breaks previously correct behavior.
+
+## Project Reference
+
+A build dependency between projects that lets one use accessible types from the other.
+The test project references the API project, not the reverse.
